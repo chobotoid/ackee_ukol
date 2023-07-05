@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tabSelection: CustomTabBarItem = .characters
+    
+    @StateObject var model: CharactersModel = CharactersModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        CustomTabBarView(selection: $tabSelection) {
+            CharactersView(vm: CharactersViewModel(model: model))
+                .customTabItem(tab: .characters, selection: $tabSelection)
+            FavouritesView()
+                .customTabItem(tab: .favourites, selection: $tabSelection)
         }
-        .padding()
+        .onTapGesture {
+            print(model.loadedCharacters.count)
+        }
     }
 }
 

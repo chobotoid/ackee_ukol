@@ -14,6 +14,17 @@
 		F36BBF9F2A4F43AB00CBA527 /* ackee_ukolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBF9E2A4F43AB00CBA527 /* ackee_ukolTests.swift */; };
 		F36BBFA92A4F43AB00CBA527 /* ackee_ukolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFA82A4F43AB00CBA527 /* ackee_ukolUITests.swift */; };
 		F36BBFAB2A4F43AB00CBA527 /* ackee_ukolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFAA2A4F43AB00CBA527 /* ackee_ukolUITestsLaunchTests.swift */; };
+		F36BBFBB2A4F483B00CBA527 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFBA2A4F483B00CBA527 /* CharactersView.swift */; };
+		F36BBFBF2A4F4BEC00CBA527 /* CustomTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFBE2A4F4BEC00CBA527 /* CustomTabBarItemView.swift */; };
+		F36BBFC12A4F4C7200CBA527 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFC02A4F4C7200CBA527 /* CustomTabBarItem.swift */; };
+		F36BBFC32A540E2000CBA527 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFC22A540E2000CBA527 /* FavouritesView.swift */; };
+		F36BBFC52A540E8200CBA527 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFC42A540E8200CBA527 /* CustomTabBarView.swift */; };
+		F36BBFC72A540F1D00CBA527 /* CustomTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFC62A540F1D00CBA527 /* CustomTabBarItemsPreferenceKey.swift */; };
+		F36BBFC92A54173200CBA527 /* CharacterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFC82A54173200CBA527 /* CharacterItemView.swift */; };
+		F36BBFCB2A541AE600CBA527 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFCA2A541AE600CBA527 /* CustomColors.swift */; };
+		F36BBFCE2A54BC7200CBA527 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFCD2A54BC7200CBA527 /* CharactersViewModel.swift */; };
+		F36BBFD12A54BE3000CBA527 /* RequestResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFD02A54BE3000CBA527 /* RequestResponses.swift */; };
+		F36BBFD32A55766900CBA527 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFD22A55766900CBA527 /* CharactersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		F36BBFA42A4F43AB00CBA527 /* ackee_ukolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ackee_ukolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36BBFA82A4F43AB00CBA527 /* ackee_ukolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ackee_ukolUITests.swift; sourceTree = "<group>"; };
 		F36BBFAA2A4F43AB00CBA527 /* ackee_ukolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ackee_ukolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F36BBFBA2A4F483B00CBA527 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		F36BBFBE2A4F4BEC00CBA527 /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
+		F36BBFC02A4F4C7200CBA527 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		F36BBFC22A540E2000CBA527 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		F36BBFC42A540E8200CBA527 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		F36BBFC62A540F1D00CBA527 /* CustomTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		F36BBFC82A54173200CBA527 /* CharacterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterItemView.swift; sourceTree = "<group>"; };
+		F36BBFCA2A541AE600CBA527 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		F36BBFCD2A54BC7200CBA527 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		F36BBFD02A54BE3000CBA527 /* RequestResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponses.swift; sourceTree = "<group>"; };
+		F36BBFD22A55766900CBA527 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +116,11 @@
 		F36BBF8C2A4F43AA00CBA527 /* ackee_ukol */ = {
 			isa = PBXGroup;
 			children = (
+				F36BBFCF2A54BD8500CBA527 /* API */,
+				F36BBFBD2A4F484B00CBA527 /* Models */,
+				F36BBFBC2A4F483E00CBA527 /* ViewModels */,
+				F36BBFB92A4F478800CBA527 /* Elements */,
+				F36BBFB72A4F477000CBA527 /* Views */,
 				F36BBF8D2A4F43AA00CBA527 /* ackee_ukolApp.swift */,
 				F36BBF8F2A4F43AA00CBA527 /* ContentView.swift */,
 				F36BBF912A4F43AB00CBA527 /* Assets.xcassets */,
@@ -125,6 +152,52 @@
 				F36BBFAA2A4F43AB00CBA527 /* ackee_ukolUITestsLaunchTests.swift */,
 			);
 			path = ackee_ukolUITests;
+			sourceTree = "<group>";
+		};
+		F36BBFB72A4F477000CBA527 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F36BBFBA2A4F483B00CBA527 /* CharactersView.swift */,
+				F36BBFC22A540E2000CBA527 /* FavouritesView.swift */,
+				F36BBFC42A540E8200CBA527 /* CustomTabBarView.swift */,
+				F36BBFC82A54173200CBA527 /* CharacterItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F36BBFB92A4F478800CBA527 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				F36BBFBE2A4F4BEC00CBA527 /* CustomTabBarItemView.swift */,
+				F36BBFC62A540F1D00CBA527 /* CustomTabBarItemsPreferenceKey.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		F36BBFBC2A4F483E00CBA527 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F36BBFCD2A54BC7200CBA527 /* CharactersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F36BBFBD2A4F484B00CBA527 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F36BBFC02A4F4C7200CBA527 /* CustomTabBarItem.swift */,
+				F36BBFCA2A541AE600CBA527 /* CustomColors.swift */,
+				F36BBFD22A55766900CBA527 /* CharactersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F36BBFCF2A54BD8500CBA527 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F36BBFD02A54BE3000CBA527 /* RequestResponses.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +330,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36BBFCE2A54BC7200CBA527 /* CharactersViewModel.swift in Sources */,
+				F36BBFC72A540F1D00CBA527 /* CustomTabBarItemsPreferenceKey.swift in Sources */,
+				F36BBFC52A540E8200CBA527 /* CustomTabBarView.swift in Sources */,
+				F36BBFC12A4F4C7200CBA527 /* CustomTabBarItem.swift in Sources */,
 				F36BBF902A4F43AA00CBA527 /* ContentView.swift in Sources */,
 				F36BBF8E2A4F43AA00CBA527 /* ackee_ukolApp.swift in Sources */,
+				F36BBFBF2A4F4BEC00CBA527 /* CustomTabBarItemView.swift in Sources */,
+				F36BBFCB2A541AE600CBA527 /* CustomColors.swift in Sources */,
+				F36BBFC92A54173200CBA527 /* CharacterItemView.swift in Sources */,
+				F36BBFD32A55766900CBA527 /* CharactersModel.swift in Sources */,
+				F36BBFD12A54BE3000CBA527 /* RequestResponses.swift in Sources */,
+				F36BBFC32A540E2000CBA527 /* FavouritesView.swift in Sources */,
+				F36BBFBB2A4F483B00CBA527 /* CharactersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
