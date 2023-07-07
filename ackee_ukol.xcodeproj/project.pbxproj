@@ -25,6 +25,8 @@
 		F36BBFCE2A54BC7200CBA527 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFCD2A54BC7200CBA527 /* CharactersViewModel.swift */; };
 		F36BBFD12A54BE3000CBA527 /* RequestResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFD02A54BE3000CBA527 /* RequestResponses.swift */; };
 		F36BBFD32A55766900CBA527 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFD22A55766900CBA527 /* CharactersModel.swift */; };
+		F36BBFD52A5631B100CBA527 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFD42A5631B100CBA527 /* CharacterDetailView.swift */; };
+		F36BBFD72A5712DF00CBA527 /* HorizontalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BBFD62A5712DF00CBA527 /* HorizontalAlignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		F36BBFCD2A54BC7200CBA527 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		F36BBFD02A54BE3000CBA527 /* RequestResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponses.swift; sourceTree = "<group>"; };
 		F36BBFD22A55766900CBA527 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
+		F36BBFD42A5631B100CBA527 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		F36BBFD62A5712DF00CBA527 /* HorizontalAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAlignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				F36BBFC22A540E2000CBA527 /* FavouritesView.swift */,
 				F36BBFC42A540E8200CBA527 /* CustomTabBarView.swift */,
 				F36BBFC82A54173200CBA527 /* CharacterItemView.swift */,
+				F36BBFD42A5631B100CBA527 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 		F36BBFB92A4F478800CBA527 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				F36BBFC02A4F4C7200CBA527 /* CustomTabBarItem.swift */,
 				F36BBFBE2A4F4BEC00CBA527 /* CustomTabBarItemView.swift */,
 				F36BBFC62A540F1D00CBA527 /* CustomTabBarItemsPreferenceKey.swift */,
 			);
@@ -185,9 +191,9 @@
 		F36BBFBD2A4F484B00CBA527 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F36BBFC02A4F4C7200CBA527 /* CustomTabBarItem.swift */,
 				F36BBFCA2A541AE600CBA527 /* CustomColors.swift */,
 				F36BBFD22A55766900CBA527 /* CharactersModel.swift */,
+				F36BBFD62A5712DF00CBA527 /* HorizontalAlignment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36BBFCE2A54BC7200CBA527 /* CharactersViewModel.swift in Sources */,
+				F36BBFD72A5712DF00CBA527 /* HorizontalAlignment.swift in Sources */,
 				F36BBFC72A540F1D00CBA527 /* CustomTabBarItemsPreferenceKey.swift in Sources */,
 				F36BBFC52A540E8200CBA527 /* CustomTabBarView.swift in Sources */,
+				F36BBFD52A5631B100CBA527 /* CharacterDetailView.swift in Sources */,
 				F36BBFC12A4F4C7200CBA527 /* CustomTabBarItem.swift in Sources */,
 				F36BBF902A4F43AA00CBA527 /* ContentView.swift in Sources */,
 				F36BBF8E2A4F43AA00CBA527 /* ackee_ukolApp.swift in Sources */,

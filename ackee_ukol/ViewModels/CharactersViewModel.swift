@@ -8,14 +8,13 @@
 import SwiftUI
 
 class CharactersViewModel: ObservableObject {
-    
-//    @Published var response: CharactersResponse?
-    
+        
     @Published var model: CharactersModel
     
     var characters: Array<Character> {
         model.loadedCharacters
     }
+    
     
     init(model: CharactersModel) {
         self.model = model
@@ -24,6 +23,11 @@ class CharactersViewModel: ObservableObject {
         }
     }
     
+//    func searchingLoadedCharacters(input: String) -> Array<Character> {
+//        return model.loadedCharacters
+//    }
+
+
     func getCharacterList(url: URL?) async {
         let tmpUrl: URL?
         if let notNilURL = url {
@@ -48,10 +52,8 @@ class CharactersViewModel: ObservableObject {
                 do {
                     let tmpResponse = try JSONDecoder().decode(CharactersResponse.self, from: data)
                     DispatchQueue.main.async {
-//                        if let results = tmpResponse.results {
-//                        }
                         self.model.loadCharacters(characters: tmpResponse.results)
-//                        self.response = tmpResponse
+                        self.model.loadInfo(info: tmpResponse.info)
                     }
                 }
                 catch {
@@ -67,12 +69,17 @@ class CharactersViewModel: ObservableObject {
     }
     
     func getNextPage() async {
-//        if let next = response?.info?.next {
-//            await getCharacterList(url: next)
-//        }
-//        else {
-//            print("Next is nil")
-//        }
+        if let next = model.info.next {
+            print("NEXT PAGE LOADING")
+            await getCharacterList(url: next)
+        }
+        else {
+            print("Next is nil")
+        }
+    }
+    
+    func toggleFavourite(character: Character) {
+        model.toggleFavourite(character: character)
     }
     
 }

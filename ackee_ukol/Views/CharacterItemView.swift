@@ -29,8 +29,12 @@ struct CharacterItemView: View {
                     Text(character.apiResult.name ?? "unknown name")
                         .bold()
                         .font(.system(size: 20))
-                    Image(systemName: "star")
-                        .foregroundColor(.blue)                    
+                        .foregroundColor(Color.primaryColor)
+                        .colorInvert()
+                    if character.isFavourite {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.blue)
+                    }
                 }
                 Text(character.apiResult.status ?? "unknown status")
                     .foregroundColor(.gray)
@@ -43,12 +47,12 @@ struct CharacterItemView: View {
         .padding(10)
         .background(Color.itemColor)
         .cornerRadius(15)
+//        .shadow(radius: 1)
     }
 }
 
 struct CharacterView_Previews: PreviewProvider {
     static var previews: some View {
-        let res = Character(apiResult: Result(), isFavourite: false)
-        CharacterItemView(character: res)
+        CharacterItemView(character: Character.mock)
     }
 }

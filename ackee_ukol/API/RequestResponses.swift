@@ -51,6 +51,10 @@ struct Result: Decodable {
     
 }
 
+extension Result {
+    static let mock: Result = Result(id: 1, name: "Rick Sanchez", status: "Alive", species: "Human", type: "", gender: "Male", origin: Origin.mock, location: Location.mock, image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"))
+}
+
 struct Origin: Decodable {
     
     var name: String?
@@ -59,10 +63,18 @@ struct Origin: Decodable {
     
 }
 
+extension Origin {
+    static let mock: Origin = Origin(name: "Earth (C-137)", url: "https://rickandmortyapi.com/api/location/1")
+}
+
 struct Location: Decodable {
     
     var name: String?
     
     var url: String?
     
+}
+
+extension Location {
+    static let mock: Location = Location(name: "Citadel of Ricks", url: "https://rickandmortyapi.com/api/location/3")
 }

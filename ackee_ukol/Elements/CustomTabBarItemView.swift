@@ -7,7 +7,10 @@
 
 import SwiftUI
 
+
+/// Custom tab bar view
 struct CustomTabBarItemView: View {
+    
     let tabs: [CustomTabBarItem]
     
     @Binding var selection: CustomTabBarItem
@@ -23,9 +26,8 @@ struct CustomTabBarItemView: View {
         }
         .frame(width: nil, height: 60)
         .background(Color.itemColor)
-//        .border(.red)
         .cornerRadius(35)
-//        .padding()
+        .shadow(radius: 5)
     }
 }
 

@@ -16,13 +16,6 @@ enum CustomTabBarItem: Hashable {
         case .favourites: return "Favourite"
         }
     }
-    
-//    var tabName: String {
-//        switch self {
-//        case .characters: return "Daily"
-//        case .favourites: return "Launches"
-//        }
-//    }
 }
 
 

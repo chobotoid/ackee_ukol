@@ -16,12 +16,12 @@ struct ContentView: View {
         CustomTabBarView(selection: $tabSelection) {
             CharactersView(vm: CharactersViewModel(model: model))
                 .customTabItem(tab: .characters, selection: $tabSelection)
-            FavouritesView()
+            FavouritesView(vm: CharactersViewModel(model: model))
                 .customTabItem(tab: .favourites, selection: $tabSelection)
         }
-        .onTapGesture {
-            print(model.loadedCharacters.count)
-        }
+//        .onTapGesture {
+//            print(model.loadedCharacters.count)
+//        }
     }
 }
 

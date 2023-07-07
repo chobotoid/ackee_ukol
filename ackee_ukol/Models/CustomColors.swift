@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Custom colors found in figma UI design mostly
 extension Color {
     
     static let primaryColor = Color("PrimaryColor")
