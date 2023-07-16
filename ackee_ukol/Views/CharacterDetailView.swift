@@ -10,7 +10,7 @@ import SwiftUI
 
 
 /// View to show character detail
-/// please don't try to break it, you'll be successful, it's messy and was painful to do, but hopefully it's close enough to the figma visualization, the text alignment might be easily broken
+/// please don't try to break it, you'll be successful, it's messy and was painful to do, but hopefully it's close enough to the figma visualization, the text alignment might be easily broken - landscape mode, will be glad to hear any feedback regarding this or other parts of the app
 struct CharacterDetailView: View {
     
     @State var character: Character

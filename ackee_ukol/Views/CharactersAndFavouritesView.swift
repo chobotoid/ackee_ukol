@@ -40,12 +40,13 @@ struct CharactersAndFavouritesView: View {
                         .padding(.vertical)
                 }
             }
+            .padding(.horizontal)
             .background(Color.primaryColor)
             .navigationTitle(type == .loaded ? "Characters" : "Favourites")
             .frame(maxWidth: .infinity)
-            .searchable(text: $searchText, placement: .toolbar)
+            .searchable(text: $searchText, placement: .toolbar, prompt: "Search character")
         }
-        .padding()
+//        .padding()
         .background(Color.primaryColor)
         .ignoresSafeArea(.all)
     }
