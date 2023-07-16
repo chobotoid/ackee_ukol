@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// To be honest, pretty much scrambled this from a youtube video, couldn't make it on my own, but was able to understand it enough to customize it to my needs
 struct CustomTabBarItemsPreferenceKey: PreferenceKey {
     
     static var defaultValue: [CustomTabBarItem] = []

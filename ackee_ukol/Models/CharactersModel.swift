@@ -9,8 +9,8 @@ import Foundation
 
 
 
-/// Struct holding info about each character, wanted to change it to class so that in `CharactersModel` there aren't the characters twice, but once and second one is reference, but was unsuccessful - `CharactersView` stopped updating upon changing favourite status, which I was unable to solve
-/// - SeeAlso: `CharactersModel`, `CharactersView`
+/// Struct holding info about each character, wanted to change it to class so that in `CharactersModel` there aren't the characters twice, but once and second one is reference, but was unsuccessful - `CharactersAndFavouritesView` stopped updating upon changing favourite status, which I was unable to solve
+/// - SeeAlso: `CharactersModel`, `CharactersAndFavouritesView`
 struct Character {
     
     /// Result of API call, containing characters and info about them
@@ -21,6 +21,7 @@ struct Character {
     
 }
 
+/// Extension containing mocks for all types of characters (favourite or not favourite)
 extension Character {
     static var mock: Character = Character(apiResult: Result.mock, isFavourite: false)
     static var mockFav: Character = Character(apiResult: Result.mock, isFavourite: true)
@@ -86,6 +87,9 @@ class CharactersModel: ObservableObject {
         }
     }
     
+    /// Function for searching through the loaded characters by name
+    /// - Parameter input: name of the character to search for
+    /// - Returns: array of characters whose names contain the searched string
     func searchLoadedCharacters(input: String) -> Array<Character> {
         return loadedCharacters.filter{
             if let name = $0.apiResult.name {
@@ -95,4 +99,15 @@ class CharactersModel: ObservableObject {
         }
     }
     
+    /// Function for searching through the favourited characters by name
+    /// - Parameter input: name of the character to search for
+    /// - Returns: array of characters whose names contain the searched string
+    func searchFavouriteCharacters(input: String) -> Array<Character> {
+        return favouriteCharacters.filter{
+            if let name = $0.apiResult.name {
+                return name.contains(input)
+            }
+            return false
+        }
+    }
 }

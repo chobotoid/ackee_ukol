@@ -7,21 +7,20 @@
 
 import SwiftUI
 
+/// ContentView of the whole app pretty much
 struct ContentView: View {
+    
     @State private var tabSelection: CustomTabBarItem = .characters
     
     @StateObject var model: CharactersModel = CharactersModel()
     
     var body: some View {
         CustomTabBarView(selection: $tabSelection) {
-            CharactersView(vm: CharactersViewModel(model: model))
+            CharactersAndFavouritesView(vm: CharactersAndFavouritesViewModel(model: model), type: .loaded)
                 .customTabItem(tab: .characters, selection: $tabSelection)
-            FavouritesView(vm: CharactersViewModel(model: model))
+            CharactersAndFavouritesView(vm: CharactersAndFavouritesViewModel(model: model), type: .favourite)
                 .customTabItem(tab: .favourites, selection: $tabSelection)
         }
-//        .onTapGesture {
-//            print(model.loadedCharacters.count)
-//        }
     }
 }
 

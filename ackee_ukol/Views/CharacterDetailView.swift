@@ -9,18 +9,17 @@ import SwiftUI
 
 
 
+/// View to show character detail
+/// please don't try to break it, you'll be successful, it's messy and was painful to do, but hopefully it's close enough to the figma visualization, the text alignment might be easily broken
 struct CharacterDetailView: View {
     
     @State var character: Character
-    
-//    @State var isFavourite: Bool
-    
+        
     @Binding var model: CharactersModel
 
     var pairsOfInfo: KeyValuePairs<String, String>
     
     init(character: Character, model: Binding<CharactersModel>) {
-//        self._isFavourite = State(wrappedValue: character.isFavourite)
         self._character = State(wrappedValue: character)
         self._model = model
         pairsOfInfo = [
@@ -87,9 +86,6 @@ struct CharacterDetailView: View {
                             Spacer()
                         }
                         .padding(.horizontal)
-    //                    .fixedSize(horizontal: false, vertical: true)
-//                        .padding()
-    //                    Spacer()
                     }
                     .padding()
                 }

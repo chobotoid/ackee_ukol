@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-class CharactersViewModel: ObservableObject {
-        
+/// ViewModel for `CharactersAndFavouritesView`
+class CharactersAndFavouritesViewModel: ObservableObject {
+    
+    /// Model containing all the necessary data
     @Published var model: CharactersModel
     
-    var characters: Array<Character> {
-        model.loadedCharacters
-    }
-    
-    
+    /// Initializer for the ViewModel
+    /// - Parameter model: Model to be containing all the information needed by the ViewModel and the Views
     init(model: CharactersModel) {
         self.model = model
         Task {
@@ -23,11 +22,8 @@ class CharactersViewModel: ObservableObject {
         }
     }
     
-//    func searchingLoadedCharacters(input: String) -> Array<Character> {
-//        return model.loadedCharacters
-//    }
-
-
+    /// Function either to get first page of characters or to get the next pages
+    /// - Parameter url: if null - gets first page, else - gets data from the given page
     func getCharacterList(url: URL?) async {
         let tmpUrl: URL?
         if let notNilURL = url {
@@ -68,6 +64,7 @@ class CharactersViewModel: ObservableObject {
         task.resume()
     }
     
+    /// Function to load next page of characters from api
     func getNextPage() async {
         if let next = model.info.next {
             print("NEXT PAGE LOADING")
@@ -78,6 +75,8 @@ class CharactersViewModel: ObservableObject {
         }
     }
     
+    /// Function to toggle a characters favourite status
+    /// - Parameter character: character to be favourited or unfavourited
     func toggleFavourite(character: Character) {
         model.toggleFavourite(character: character)
     }

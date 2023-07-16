@@ -7,9 +7,10 @@
 
 import SwiftUI
 
+/// View to show a single character in a row
 struct CharacterItemView: View {
     
-//    let character: Result
+    /// character to be shown
     let character: Character
     
     var body: some View {
@@ -47,7 +48,6 @@ struct CharacterItemView: View {
         .padding(10)
         .background(Color.itemColor)
         .cornerRadius(15)
-//        .shadow(radius: 1)
     }
 }
 
